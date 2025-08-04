@@ -5,6 +5,7 @@
         android:label="Author ID Assistant"
         android:supportsRtl="true"
         android:enabled="true"
+        android:icon="@android:drawable/ic_menu_preferences"
         android:theme="@android:style/Theme.DeviceDefault">
 
         <service

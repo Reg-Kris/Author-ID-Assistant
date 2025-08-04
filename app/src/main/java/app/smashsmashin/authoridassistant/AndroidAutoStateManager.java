@@ -7,6 +7,7 @@ import android.os.Build;
 import android.util.Log;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
+import java.util.Locale;
 
 /**
  * Manages Android Auto connection state detection for the Author ID Assistant.
@@ -298,7 +299,7 @@ public class AndroidAutoStateManager {
         
         if (isAutoConnected) {
             float confidence = getDetectionConfidence();
-            return String.format("Android Auto connected (confidence: %.1f%%)", confidence * 100);
+            return String.format(Locale.US, "Android Auto connected (confidence: %.1f%%)", confidence * 100);
         } else {
             return "Android Auto not detected";
         }
